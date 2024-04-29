@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="App8.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:App8_Tabs"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Myapp">
+
+    <TabBar>
+        <Tab Title="Home" Icon="home.png" >
+
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"  />
+
+        </Tab>
+
+        <Tab Title="store" Icon="store.png" >
+
+            <ShellContent  ContentTemplate="{DataTemplate local:Page2}" Route="Page2"/>
+
+        </Tab>
+
+        <Tab Title="Shop" Icon="shop.png" >
+
+            <ShellContent ContentTemplate="{DataTemplate local:Page3}" Route="Page3"/>
+
+        </Tab>
+
+        <Tab Title="Payment" Icon="payment.png" >
+
+            <ShellContent ContentTemplate="{DataTemplate local:Page4}" Route="Page3"/>
+
+        </Tab>
+    </TabBar>
+
+</Shell>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App8_Tabs.Page3"
+            Title="Ray">
+    <VerticalStackLayout BackgroundColor="Red">
+
+        <StackLayout  Orientation="Vertical"   BackgroundColor="White" Padding="40" Margin="20" >
+
+
+            <StackLayout HorizontalOptions="Center">
+                <Label Text="Memory Size GB"  FontAttributes="Bold" FontSize="20"/>
+                <StackLayout  HorizontalOptions="Center" Orientation="Horizontal"  >
+                    <Button Text="-"  x:Name="Button1_minus"  />
+                    <Entry/>
+                    <Button Text="+" x:Name="Button1_plus"/>
+
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Center">
+                <Label Text="Storage Size GB"  FontAttributes="Bold" FontSize="20" />
+                <StackLayout  HorizontalOptions="Center" Orientation="Horizontal">
+                    <Button Text="-" x:Name="Button2_minus" />
+                    <Entry/>
+                    <Button Text="+" x:Name="Button2_plus"/>
+
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Center">
+                <Label Text="Monitor Size GB"    FontAttributes="Bold" FontSize="20"/>
+                <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                    <Button Text="-"   x:Name="Button3_minus" />
+                    <Entry/>
+                    <Button Text="+" x:Name="Button3_plus" />
+
+                </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>
